@@ -1,7 +1,8 @@
 @extends('template.default')
 
-
+@section('title','Workshop FORM')
 @section('content')
+<h1>Workshop #HTML - FORM</h1>
     <form>
         <table border="0">
             <tr>
@@ -153,3 +154,12 @@
         </table>
     </form>
 @endsection
+
+
+@push('scripts')
+    <script>
+        console.log('Hello Word! Js')
+        console.error('Hello Error! Js')
+        console.warn('Hello Warning! Js')
+    </script>
+@endpush
