@@ -28,4 +28,5 @@ class MyController extends Controller
         return view('Myview.calculate', $data);
     }
 
+    
 }
