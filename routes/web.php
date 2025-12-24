@@ -10,7 +10,7 @@ Route::get('/se', function () {
     return view('template.default');
 });
 
-Route::get('/mycontroller', [App\Http\Controllers\MyController::class, 'index']);
-Route::get('/calculate', [App\Http\Controllers\MyController::class, 'info']);
-Route::post('/calculate', [App\Http\Controllers\MyController::class, 'calculate']);
+use App\Http\Controllers\MyController;
 
+Route::get('/workshop', [MyController::class, 'index']);
+Route::post('/workshop/store', [MyController::class, 'store'])->name('workshop.store');

@@ -3,7 +3,8 @@
 @section('title','Workshop FORM')
 @section('content')
 <h1  style="text-align: center;">Workshop #HTML - FORM</h1>
-    <form>
+    <form action="{{ route('workshop.store') }}" method="POST">
+        @csrf
         <table border="0" cellpadding="5" style="margin: 0 auto;">
             <tr>
                 <td style="width: 170px ;" ><b ">ชื่อ</b></td>
@@ -236,7 +237,7 @@
             // แจ้งเตือนการส่ง
             if (isAllValid) {
                 alert("ข้อมูลครบถ้วน พร้อมส่ง!");
-
+                document.querySelector('form').submit(); // สั่งส่งฟอร์มไปที่ Controller
             } else {
                 alert("ข้อมูลไม่ครบถ้วน ไม่พร้อมส่ง!");
 
