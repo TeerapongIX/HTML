@@ -15,7 +15,7 @@
 
 
 
-                background-image: url('/bg.jpg');
+                background-image: url('/5.jpg');
 
                 background-size: cover;
                 background-position: center;
